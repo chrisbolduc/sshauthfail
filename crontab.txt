@@ -18,6 +18,9 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 #
 # m h  dom mon dow   command
+ 
 MAILTO=you@example.com
+# Check every 15 minutes for too many failed logins
 */15 * * * * /root/sshauthfail/badclients_local.sh
+# Send an email every day at midnight
 59 23 * * * /root/sshauthfail/sendemail.sh
