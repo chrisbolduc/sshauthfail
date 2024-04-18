@@ -6,3 +6,4 @@ Installation:
 2. Download badclients.sh and sendemail.sh and put them under /root/sshauthfail
 3. Give it execute permission (e.g. chmod +x 700 /root/sshauthfail/badclients.sh)
 4. Edit the root crontab to run /root/sshauthfail/badclients.sh at whatever interval you want. (crontab -e to edit, crontab -l to list)
+5. Install geoiplookup (sudo apt install geoip-bin)
